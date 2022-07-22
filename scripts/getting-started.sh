@@ -17,11 +17,17 @@ brew install \
 # Install macOS applications
 brew cask install \
     slack \
+    front \
     google-chrome \
     visual-studio-code \
     postman \
     1password \
     iterm2 \
+    datagrip \
+    postico \
+    spotify \
+    zoom \
+    docker \
 
 # Setup postgres
 brew services start postgresql
