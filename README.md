@@ -1,4 +1,4 @@
-# Apple Mac - Getting Started
+# MacOS Setup - Getting Started
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -6,16 +6,15 @@
 
 - [Install Homebrew](#install-homebrew)
 - [Run Getting Started Scripts](#run-getting-started-scripts)
-- [Setup VSCode](#setup-vscode)
-  - [Recommended Extensions](#recommended-extensions)
-  - [Extensions](#extensions)
-  - [Settings](#settings)
 - [Setup NPM](#setup-npm)
 - [Setup NVM](#setup-nvm)
 - [Ruby, Bundle and Rails](#ruby-bundle-and-rails)
 - [Setup Rbenv](#setup-rbenv)
 - [Setup Postgres](#setup-postgres)
 - [Setup Email](#setup-email)
+- [Setup VSCode](#setup-vscode)
+  - [Recommended Extensions](#recommended-extensions)
+  - [Extensions](#extensions)
 - [Browser Extensions](#browser-extensions)
 - [Database Management](#database-management)
     - [Datagrip](#datagrip)
@@ -53,8 +52,8 @@ Copy and paste the entire contents of the script file from this repo into the ne
 ```bash
 nano ~/getting-started.sh
 # paste
-#(to exit)
-ctrl and x
+# ctrl and x (to exit)
+# save when exiting.
 ```
 
 Now run the following to make the shell files executable:
@@ -68,32 +67,6 @@ Now you can run the script:
 ```bash
 ~/getting-started.sh
 ```
-
-## Setup VSCode
-
-Or skip this section and setup your preferred text editor.
-
-### Recommended Extensions
-
-Run the following block to install some recommended VS Code settings.
-
-```bash
-code --install-extension eamodio.gitlens
-code --install-extension wmaurer.change-case
-code --install-extension oderwat.indent-rainbow
-code --install-extension pranaygp.vscode-css-peek
-code --install-extension shardulm94.trailing-spaces
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension Cardinal90.multi-cursor-case-preserve
-```
-
-If you already have VSCode setup on another laptop and would like to re-use your current extensions  
-follow these steps on the *old* laptop:
-
-### Extensions
-- Open the terminal
-- Run the command: `code --list-extensions | xargs -L 1 echo code --install-extension`
-- Copy/save the output (maybe email to yourself) and paste this output in the terminal on your new mac to install the same extensions.
 
 ---
 
@@ -153,6 +126,32 @@ Setup a root user: `sudo -u YOUR_USERNAME createuser -s -w root`
 
 ## Setup Email
 - The setup script should have install Front for you. Please set this up.
+
+## Setup VSCode
+
+Or skip this section and setup your preferred text editor.
+
+### Recommended Extensions
+
+Run the following block to install some recommended VS Code settings.
+
+```bash
+code --install-extension eamodio.gitlens
+code --install-extension wmaurer.change-case
+code --install-extension oderwat.indent-rainbow
+code --install-extension pranaygp.vscode-css-peek
+code --install-extension shardulm94.trailing-spaces
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension Cardinal90.multi-cursor-case-preserve
+```
+
+If you already have VSCode setup on another laptop and would like to re-use your current extensions  
+follow these steps on the *old* laptop:
+
+### Extensions
+- Open the terminal
+- Run the command: `code --list-extensions | xargs -L 1 echo code --install-extension`
+- Copy/save the output (maybe email to yourself) and paste this output in the terminal on your new mac to install the same extensions.
 
 ## Browser Extensions
 We recommend downloading the [1Password (password manager)](https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa) for chrome.
