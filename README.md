@@ -45,9 +45,11 @@ Install [Homebrew](https://brew.sh/):
 
 ```bash
 touch ~/getting-started.sh
+touch ~/install-apps.sh
 ```
 
-Copy and paste the entire contents of the script file from this repo into the newly created file.
+Copy and paste the entire contents of the script file from this repo into the newly created files.
+E.g.
 
 ```bash
 nano ~/getting-started.sh
@@ -60,12 +62,14 @@ Now run the following to make the shell files executable:
 
 ```bash
 sudo chmod -R 755 ~/getting-started.sh
+sudo chmod -R 755 ~/install-apps.sh
 ```
 
 Now you can run the script:
 
 ```bash
 ~/getting-started.sh
+~/install-apps.sh
 ```
 
 ---
