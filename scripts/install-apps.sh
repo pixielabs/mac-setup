@@ -17,3 +17,4 @@ brew install --cask \
     spotify \
     zoom \
     docker \
+    backblaze \
