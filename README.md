@@ -36,7 +36,7 @@ Install [Homebrew](https://brew.sh/):
 ```
 
 > The ./getting-started.sh should contain all the applications and cli tools you'll need to get up and running quickly.  
-> If you need anything else you can get it using Homebrew. `brew install [formula]` (for CLI tools) or `brew cask install [cask]` (for applications)  
+> If you need anything else you can get it using Homebrew. `brew install [formula]` (for CLI tools) or `brew install --cask [cask]` (for applications)  
 > [Search Homebrew](https://formulae.brew.sh/) for formulae and casks
 
 ## Run Getting Started Scripts
