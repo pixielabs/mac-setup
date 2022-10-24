@@ -3,6 +3,9 @@
 # Download latest updates to Homebrew
 brew update
 
+# Add Heroku tap
+brew tap heroku/brew
+
 # Install macOS applications
 brew install --cask \
     slack \
@@ -18,3 +21,4 @@ brew install --cask \
     zoom \
     docker \
     backblaze \
+    heroku
