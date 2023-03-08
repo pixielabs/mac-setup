@@ -4,6 +4,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [Setup Git](#setup-git)
 - [Install Homebrew](#install-homebrew)
 - [Run Getting Started Scripts](#run-getting-started-scripts)
 - [Setup NPM](#setup-npm)
@@ -26,6 +27,15 @@
     - [Usage Examples](#usage-examples)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Setup Git
+
+Confirm all the defaults
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@pixielabs.io"
+```
 
 ## Install Homebrew
 
@@ -169,23 +179,31 @@ We recommend downloading the [1Password (password manager)](https://chrome.googl
 ## SSH Keys / Cloning from GitHub
 [Learn more about GitHub/SSH keys](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 
-> Once generated you should have a folder at ~/.ssh which will contain your id_rsa.pub which you can use to generate a key on GitHub
+
+1. Generate an SSH key if you don't have one already, or skip to step 3:
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "you@pixielabs.io"
 ```
 
-Confirm all the defaults
+2. The ssh-keygen command will generate a public key `~/.ssh/id_ed25519.pub` and a private key `~/.ssh/id_ed25519`. 
+
+3. The public key should be added to your GitHub account (or other hosting service you are using for your Git repositories) so that you can authenticate with your private key.
 
 ```bash
-git config --global user.name "Your Name"
-
-git config --global user.email "your_email@example.com"
-
-cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_ed25519.pub
 ```
 
 Copy output to https://github.com/settings/keys
+
+4. Once you have added your public key to your Git hosting service, add the following commands to your `~/.zshrc` file to automatically start the ssh-agent and add your private key to it each time you open a new terminal window.
+
+Example addition to your ZSH configuration:
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
 
 ## Team Communication
 We use Slack and Zoom to communicate, these should have been install by the script.  
