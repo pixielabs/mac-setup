@@ -105,7 +105,7 @@ Install the newest version of Node.js, check for version [here](https://nodejs.o
 Npm should be installed along with Node.js.
 
 ```bash
-nvm install 18.16
+nvm install "lts/*"
 ```
 
 ## Setup Rbenv
