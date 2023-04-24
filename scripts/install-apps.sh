@@ -21,4 +21,6 @@ brew install --cask \
     zoom \
     docker \
     backblaze \
-    heroku
+    
+# Install heroku
+brew install heroku
