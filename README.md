@@ -4,14 +4,12 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Setup Git](#setup-git)
 - [Install Homebrew](#install-homebrew)
 - [Run Getting Started Scripts](#run-getting-started-scripts)
-- [Setup NPM](#setup-npm)
+- [Setup Git](#setup-git)
 - [Setup NVM](#setup-nvm)
-- [Ruby, Bundle and Rails](#ruby-bundle-and-rails)
+- [Setup Node.js](#setup-nodejs)
 - [Setup Rbenv](#setup-rbenv)
-- [Setup Postgres](#setup-postgres)
 - [Setup Email](#setup-email)
 - [Setup VSCode](#setup-vscode)
   - [Recommended Extensions](#recommended-extensions)
@@ -22,20 +20,12 @@
     - [Postico](#postico)
 - [SSH Keys / Cloning from GitHub](#ssh-keys--cloning-from-github)
 - [Team Communication](#team-communication)
-- [Slack Screen Recording](#slack-screen-recording)
+- [Slack & Zoom Screen Recording](#slack--zoom-screen-recording)
+- [Setup Zoxide](#setup-zoxide)
 - [Doctoc](#doctoc)
     - [Usage Examples](#usage-examples)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## Setup Git
-
-Confirm all the defaults
-
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "you@pixielabs.io"
-```
 
 ## Install Homebrew
 
@@ -84,11 +74,13 @@ Now you can run the script:
 
 ---
 
-## Setup NPM
-Update NPM to the latest version:
+## Setup Git
+
+Confirm all the defaults
 
 ```bash
-npm install -g npm
+git config --global user.name "Your Name"
+git config --global user.email "you@pixielabs.io"
 ```
 
 ## Setup NVM
@@ -107,15 +99,13 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 See [Troubleshooting](https://github.com/nvm-sh/nvm#troubleshooting-on-macos) for common issues.
 
-## Ruby, Bundle and Rails
-The Mac should come with Ruby, Bundle and Rails pre-installed.
+## Setup Node.js
+Install the newest version of Node.js.
+
+Npm should be installed along with Node.js.
 
 ```bash
-ruby -v
-
-bundle -v
-
-rails -v
+nvm install "lts/*"
 ```
 
 ## Setup Rbenv
@@ -133,10 +123,6 @@ Run the rbenv doctor script to check rbenv is installed correctly:
 ```bash
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
 ```
-
-## Setup Postgres
-[Postgres](https://www.postgresql.org/) should be added by the getting-started.sh script.  
-Setup a root user: `sudo -u YOUR_USERNAME createuser -s -w root`
 
 ## Setup Email
 - The setup script should have install Front for you. Please set this up.
@@ -208,12 +194,19 @@ ssh-add ~/.ssh/id_ed25519
 ## Team Communication
 We use Slack and Zoom to communicate, these should have been install by the script.  
 
-## Slack Screen Recording
+## Slack & Zoom Screen Recording
 You may notice that you cannot share your screen properly on Slack. To fix that:
 
-**System Preferences > Security & Privacy > Privacy > Screen Recording and then clicking the tick box next to slack**
+**System Preferences > Security & Privacy > Privacy > Screen Recording and then clicking the tick box next to slack & zoom (or add them clicking + and searching for the app name) **
 
-You might need to restart Slack for the changes to take affect.
+You might need to restart Slack & Zoom for the changes to take affect.
+
+## Setup Zoxide
+Install Zoxide for easier folder traversing.
+
+```bash
+curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
+```
 
 ## Doctoc
 Use [doctoc](https://github.com/thlorenz/doctoc) to autogenerate table of contents in markdown files.

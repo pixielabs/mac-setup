@@ -4,10 +4,10 @@
 brew update
 
 # Install CLI tools
+# Postgresql requires version to be installed, update to the latest
 brew install \
     yarn \
-    nvm \
-    postgresql \
+    postgresql@15 \
     awscli \
     ruby-build \
     rbenv \
@@ -15,7 +15,10 @@ brew install \
     git \
 
 # Setup postgres
-brew services start postgresql
+brew services start postgresql@15
+
+# Link postgres to the system version
+brew link postgresql@15
 
 # Make finder show hidden items
 defaults write com.apple.Finder AppleShowAllFiles true
