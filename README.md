@@ -100,7 +100,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 See [Troubleshooting](https://github.com/nvm-sh/nvm#troubleshooting-on-macos) for common issues.
 
 ## Setup Node.js
-Install the newest version of Node.js, check for version [here](https://nodejs.org/en).
+Install the newest version of Node.js.
 
 Npm should be installed along with Node.js.
 
