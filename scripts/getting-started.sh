@@ -7,7 +7,7 @@ brew update
 # Postgresql requires version to be installed, update to the latest
 brew install \
     yarn \
-    postgresql@15 \
+    postgresql@17 \
     awscli \
     ruby-build \
     rbenv \
@@ -15,10 +15,10 @@ brew install \
     git \
 
 # Setup postgres
-brew services start postgresql@15
+brew services start postgresql@17
 
 # Link postgres to the system version
-brew link postgresql@15
+brew link postgresql@17
 
 # Make finder show hidden items
 defaults write com.apple.Finder AppleShowAllFiles true
